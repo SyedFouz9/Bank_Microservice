@@ -1,14 +1,10 @@
-spring:
-  config:
-    activate:
-      on-profile: "qa"
 build:
-  version: "cards-4.0"
+  version: "Cards-3.0"
 
 cards:
   message: "Welcome to EazyBank accounts related local APIs "
   contactDetails:
-    name: "John Prod - Developer"
+    name: "John Default - Developer"
     email: "john@eazybank.com"
   onCallSupport:
     - (555) 555-1234

@@ -7,14 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cards" />
+        <module name="configserver" />
         <module name="account" />
         <module name="loans" />
-        <module name="cards" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account" target="17" />
       <module name="cards" target="17" />
+      <module name="configserver" target="17" />
       <module name="loan" target="17" />
       <module name="loans" target="17" />
     </bytecodeTargetLevel>
@@ -23,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="account" options="-parameters" />
       <module name="cards" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="loan" options="-parameters" />
       <module name="loans" options="-parameters" />
     </option>

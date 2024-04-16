@@ -1,9 +1,6 @@
-spring:
-  config:
-    activate:
-      on-profile: "prod"
+
 build:
- version: "4.0"
+ version: "accounts-4.0"
 
 accounts:
  message: "Welcome to EazyBank accounts related local APIs "
