@@ -1,0 +1,37 @@
+services:
+  account:
+    image: "syedfouz/account:s4"
+    container_name: account-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bankapp
+  loans:
+   image: "syedfouz/loans:s4"
+   container_name: "loans-ms"
+   ports:
+     - "8090:8090"
+   deploy:
+     resources:
+       limits:
+         memory: 700m
+   networks:
+    - bankapp
+  cards:
+    image: "syedfouz/cards:s4"
+    container_name: "cards-ms"
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bankapp
+networks:
+  bankapp:
+    driver: "bridge"
